@@ -8,7 +8,7 @@
 rm -rf /root/.config
 mkdir -p /root/.config
 url=$URL
-default='https://www.ordermygear.com'
+default='http://beeva-labs.github.io/radical-4yfn'
 sudo matchbox-window-manager -use_titlebar no -use_cursor no &
 xte 'sleep 15' 'key F11'&
 chromium-browser  --app=${url:-$default} --no-sandbox --user-data-dir=/root/.config

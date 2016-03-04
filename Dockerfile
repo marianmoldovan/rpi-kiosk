@@ -1,4 +1,4 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-python
+FROM resin/raspberrypi2-python
 
 ENV DEBIAN_FRONTEND noninteractive
 

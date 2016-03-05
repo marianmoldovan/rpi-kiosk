@@ -20,8 +20,7 @@ RUN apt-get update && apt-get install -y \
     xutils \
     xserver-xorg \
     xterm \
-    xserver-xorg-video-fbdev \
-    xserver-xorg-video-vesa
+    xserver-xorg-video-fbdev \xserver-xorg-video-vesa
 
 
 # Kiosk
@@ -51,6 +50,8 @@ RUN wget https://dl.dropboxusercontent.com/u/87113035/chromium-browser-l10n_45.0
     && wget https://dl.dropboxusercontent.com/u/87113035/chromium-codecs-ffmpeg-extra_45.0.2454.85-0ubuntu0.15.04.1.1181_armhf.deb \
     && sudo dpkg -i chromium-codecs-ffmpeg-extra_45.0.2454.85-0ubuntu0.15.04.1.1181_armhf.deb \
     && sudo dpkg -i chromium-browser-l10n_45.0.2454.85-0ubuntu0.15.04.1.1181_all.deb chromium-browser_45.0.2454.85-0ubuntu0.15.04.1.1181_armhf.deb
+
+RUN apt-get install -y midori
 
 RUN apt-get update && apt-get install -y \
     unclutter \
